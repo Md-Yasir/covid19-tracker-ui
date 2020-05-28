@@ -5,7 +5,7 @@ const app = express();
  
 // Serve only the static files form the dist directory
 // Replace the '/dist/covid19telangana'
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/dist'));ng 
  
 app.get('*', function(req,res) {
   // Replace the '/dist/covid19telangana/index.html'

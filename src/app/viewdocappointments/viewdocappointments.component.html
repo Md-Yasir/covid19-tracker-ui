@@ -6,9 +6,12 @@
         <tr>
             <th>Id</th>
             <th>Name</th>
+            <th>Mobile No</th>
+            <th>Email</th>
+            <th>Reason</th>
             <th>Age</th>
-            <th>Address</th>
             <th>Date and Time of Appointment</th>
+            <th>Alternate No</th>
             <th>Action</th>
         </tr>
     </thead>
@@ -21,7 +24,7 @@
             <td>{{appointment.reason}}</td>
             <td>{{appointment.age}}</td>
             <td>{{appointment.appointmentdatetime}}</td>
-            <td>{{appointment.altno}}</td>
+            <td>{{appointment.altphno}}</td>
             <td class="text-center"><button class="btn btn-danger btn-xs " (click)="appointmentdone(appointment.id)"><span class="glyphicon glyphicon-remove"></span> Completed</button></td>
           </tr>
     </tbody>

@@ -9,7 +9,7 @@ import { VolEntity } from '../CovidEntity';
 })
 export class RegVolComponent implements OnInit {
 
-  volunteer: VolEntity = new VolEntity('', 0, 0, '', '', '','', 0);
+  volunteer: VolEntity = new VolEntity(0, '', 0, 0, '', '', '','', 0);
   message: any;
 
   constructor(private service: CovidserviceService ) { }

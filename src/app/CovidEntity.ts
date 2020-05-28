@@ -1,5 +1,6 @@
 export class PassEntity{
     constructor(
+       public id : number,
        public name: string,
        public fname: string,
        public phno: number,
@@ -17,6 +18,7 @@ export class PassEntity{
 
 export class DocEntity{
     constructor(
+       public id : number,
        public name: string,
        public phno: number,
        public altphno: number,
@@ -29,6 +31,7 @@ export class DocEntity{
 
 export class VolEntity{
     constructor(
+       public id : number,
        public name: string,
        public phno: number,
        public altphno: number,

@@ -25,7 +25,7 @@ export class CovidserviceService {
   private VIEW_VOLUNTEER_URL = this.BASE_URL + '/vol/viewvol';
   private VIEW_DOCTOR_APPOINTMENTS = this.BASE_URL + '/doctor/viewappointments';
   private FIX_APPOINTMENT = this.BASE_URL + '/doctor/fixappointment';
-  private APPOINTMENT_COMPLETED = this.BASE_URL + '/doctor/appointmentdone';
+  private APPOINTMENT_COMPLETED = this.BASE_URL + '/doctor/appointmentdone/';
   private VIEW_USERS = this.BASE_URL + '/viewusers';
   private ADMIN = this.BASE_URL + '/admin';
 
