@@ -1,31 +1,39 @@
-<div class="container">
-<div class="container">
-    <div class="row col-md-12 col-md-offset-2 custyle table-responsive">
+<div class="container pt-4">
+    <div class="row col-md-14 col-md-offset-2 custyle table-responsive">
     <table class="table table-striped custab">
     <thead>
         <tr>
-            <th>Id</th>
             <th>Name</th>
-            <th>Mobile Number</th>
+            <th>Father Name</th>
+            <th>Mobile No.</th>
             <th>Address</th>
+            <th>Email</th>
+            <th>Pass Requirment</th>
             <th>Reason</th>
             <th>Vehicle Nummber</th>
+            <th>Start</th>
             <th>Destination</th>
+            <th>Route</th>
+            <th>Alternate No.</th>
             <th>Action</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let pass of passes">
-            <td>{{pass.id}}</td>
             <td>{{pass.name}}</td>
+            <td>{{pass.fname}}</td>
             <td>{{pass.phno}}</td>
             <td>{{pass.address}}</td>
+            <td>{{pass.email}}</td>
+            <td>{{pass.passrequirment}}</td>
             <td>{{pass.reason}}</td>
             <td>{{pass.vhno}}</td>
+            <td>{{pass.start}}</td>
             <td>{{pass.destination}}</td>
+            <td>{{pass.route}}</td>
+            <td>{{pass.altphno}}</td>
             <td class="text-center"><button class="btn btn-danger btn-xs" (click)="passissued(pass.id)"><span class="glyphicon glyphicon-remove"></span> Issued</button></td>
           </tr>
     </tbody>
     </table>
-    </div>
 </div>

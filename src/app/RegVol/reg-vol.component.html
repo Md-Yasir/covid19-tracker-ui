@@ -1,7 +1,7 @@
 <div class="content">
     <div class="pt-4 pl-4 pr-4 pb-2">
         <div class="form-style-5">
-            <form (ngSubmit) = "submitVolForm()">
+            <form (ngSubmit)="submitVolForm()">
                 <fieldset>
                     <legend><span class="number">1</span> Your Info</legend>
 
@@ -14,12 +14,20 @@
                         placeholder="Enter your Father/Gaurdian Name" />
 
                     <label for="Mobile No">Mobile No: </label>
-                    <input class="form-control" type="text" [(ngModel)]="volunteer.phno" name="phno" id="phno"
-                        required placeholder="Enter Valid Mobile Number" />
+                    <input class="form-control" type="text" [(ngModel)]="volunteer.phno" name="phno" id="phno" required
+                        placeholder="Enter Valid Mobile Number" />
+
+                    <label for="Address">Address</label>
+                    <input class="form-control" type="text" [(ngModel)]="volunteer.address" name="address" id="address"
+                        required placeholder="Enter your permenant address" />
+
+                    <label for="Aadhaar">Aadhaar No.</label>
+                    <input class="form-control" type="text" [(ngModel)]="volunteer.aadhaar" name="aadhaar" id="aadhaar" required
+                        placeholder="Enter your Aadhaar Number" />
 
                     <label for="Alternative No">Alternative No: </label>
-                    <input type="text" [(ngModel)]="volunteer.altphno" name="altphno" id="altphno"
-                        required placeholder="Enter Alternate Mobile Number" />
+                    <input type="text" [(ngModel)]="volunteer.altphno" name="altphno" id="altphno" required
+                        placeholder="Enter Alternate Mobile Number" />
 
                     <label for="Email"><span class="req">* </span> Email: </label>
                     <input class="form-control" type="text" [(ngModel)]="volunteer.email" name="email" id="email"
