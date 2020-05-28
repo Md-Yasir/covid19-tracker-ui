@@ -13,10 +13,10 @@ export class CovidserviceService {
   // private BASE_URL = "http://covid19-tracker.cloudjiffy.net";
 
   //Heroku Server
-  // private BASE_URL = "https://covid19tracker-telangana.herokuapp.com";
+  private BASE_URL = "https://covid19tracker-telangana.herokuapp.com";
 
   //Local Server
-  private BASE_URL = "http://localhost:8080";
+  // private BASE_URL = "http://localhost:8080";
 
   private PASS_REGISTRATION = this.BASE_URL + '/pass/addpass';
   private VIEW_PASS_URL = this.BASE_URL + '/pass/viewpass';
@@ -53,9 +53,9 @@ export class CovidserviceService {
 
   //VOLUNTEER SERVICES
 
-  public volRegistration(volunteers) {
+  public volRegistration(volunteer) {
 
-    return this.http.post(this.VOLUNTEER_REGISTRATION, volunteers, { responseType: 'text' as 'json' });
+    return this.http.post(this.VOLUNTEER_REGISTRATION, volunteer, { responseType: 'text' as 'json' });
 
   }
 

@@ -14,7 +14,7 @@ export class ViewvolComponent implements OnInit {
 
   ngOnInit(){
 
-    let response = this.service.getPasses();
+    let response = this.service.getVolunteers();
     response.subscribe((data)=> this.volunteers = data);
 
   }
