@@ -1,0 +1,30 @@
+<div class="container">
+<div class="container">
+    <div class="row col-md-12 col-md-offset-2 custyle table-responsive">
+    <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Date and Time of Appointment</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let appointment of appointments" >
+            <td>{{appointment.id}}</td>
+            <td>{{appointment.name}}</td>
+            <td>{{appointment.phno}}</td>
+            <td>{{appointment.email}}</td>
+            <td>{{appointment.reason}}</td>
+            <td>{{appointment.age}}</td>
+            <td>{{appointment.appointmentdatetime}}</td>
+            <td>{{appointment.altno}}</td>
+            <td class="text-center"><button class="btn btn-danger btn-xs " (click)="appointmentdone(appointment.id)"><span class="glyphicon glyphicon-remove"></span> Completed</button></td>
+          </tr>
+    </tbody>
+</table>
+    </div>
+</div>

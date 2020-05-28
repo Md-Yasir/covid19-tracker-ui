@@ -1,0 +1,65 @@
+<div class="content">
+    <div class="pt-4 pl-4 pr-4 pb-2">
+        <div class="form-style-5">
+            <form (ngSubmit) = "submitPassForm()">
+                <fieldset>
+                    <legend><span class="number">1</span> Personal Info</legend>
+
+                    <label for="Name"><span class="req">* </span> Name: </label>
+                    <input required type="text" [(ngModel)]="pass.name" name="name" id="name" required
+                        placeholder="Enter your Full Name" />
+
+                    <label for="FathernName"><span class="req">* </span>Father Name: </label>
+                    <input required type="text" [(ngModel)]="pass.fname" name="fname" id="fname" required
+                        placeholder="Enter your Father/Gaurdian Name" />
+
+                    <label for="Mobile No">Mobile No: </label>
+                    <input class="form-control" type="text" [(ngModel)]="pass.phno" name="phno" id="phno" required
+                        placeholder="Enter Valid Mobile Number" />
+
+                    <label for="Alternative No">Alternative No: </label>
+                    <input class="form-control" type="text" [(ngModel)]="pass.altphno" name="altphno" id="altphno"
+                        required placeholder="Enter Alternate Mobile Number" />
+
+                    <label for="Email"><span class="req">* </span> Email: </label>
+                    <input class="form-control" type="text" [(ngModel)]="pass.email" name="email" id="email" required
+                        placeholder="Enter valid email address" />
+
+                    <label for="Adhaar"><span class="req">* </span> Address: </label>
+                    <input class="form-control" type="text" [(ngModel)]="pass.address" name="adhaarno" id="adhaarno"
+                        required placeholder="Enter your Permenant Address" />
+
+                </fieldset>
+                <fieldset>
+                    <legend><span class="number">2</span> Pass Related Info</legend>
+
+                    <label for="Reason"><span class="req">* </span> Select your Limit: </label>
+                    <select id="passrequirment" [(ngModel)]="pass.passrequirment" name="passrequirment">                        <option value="withincity">Within City Limit</option>
+                        <option value="outofcity">Out of City</option>
+                    </select>
+
+                    <label for="Reason"><span class="req">* </span> Reason: </label>
+                    <input class="form-control" type="text" [(ngModel)]="pass.reason" name="reason" id="reason" required
+                        placeholder="Reason for travelling" />
+
+                    <label for="VehicleNumber"><span class="req">* </span> Vehicle Number: </label>
+                    <input class="form-control" type="text" [(ngModel)]="pass.vhno" name="vhno" id="vhno" required
+                        placeholder="Enter your full vehicle number" />
+
+                    <label for="Start"><span class="req">* </span> Starting Point: </label>
+                    <input class="form-control" type="text" [(ngModel)]="pass.start" name="start" id="start" required
+                        placeholder="Satrting point of the Journey" />
+
+                    <label for="Destination"><span class="req">* </span> Destination: </label>
+                    <input class="form-control" type="text" [(ngModel)]="pass.destination" name="destination"
+                        id="destination" required placeholder="YOur Destination" />
+
+                    <label for="Route"><span class="req">* </span> Route: </label>
+                    <input class="form-control" type="text" [(ngModel)]="pass.route" name="route" id="route" required
+                        placeholder="Route your Using" />
+                </fieldset>
+                <button class="button" style="vertical-align:middle" type="submit"><span>Apply </span></button>
+            </form>
+        </div>
+    </div>
+</div>

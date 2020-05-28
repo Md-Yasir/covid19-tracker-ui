@@ -1,0 +1,31 @@
+<div class="container pt-4">
+    <div class="container">
+        <div class="row col-md-12 col-md-offset-2 custyle table-responsive">
+            <table class="table table-striped custab">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>FathernName</th>
+                        <th>Contact No</th>
+                        <th>Address</th>
+                        <th>Mail</th>
+                        <th>Qualification</th>
+                        <th>Age</th>
+                        <th>Alternate No</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let volunteer of volunteers">
+                        <td>{{volunteer.name}}</td>
+                        <td>{{volunteer.fname}}</td>
+                        <td>{{volunteer.phno}}</td>
+                        <td>{{volunteer.address}}</td>
+                        <td>{{volunteer.email}}</td>
+                        <td>{{volunteer.qualification}}</td>
+                        <td>{{volunteer.age}}</td>
+                        <td>{{volunteer.altno}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>

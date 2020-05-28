@@ -1,0 +1,100 @@
+<div class="container pt-4"
+   style="text-align: center;font-size: large; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+   Corona Cases confirmed all over India
+</div>
+
+<div class="container pd-5 pr-5 pl-5">
+   <div class="table-responsive pt-4">
+      <table class="table table-striped pl-10 pt-10">
+         <thead>
+            <tr>
+               <th>State</th>
+               <th>Confirmed</th>
+               <th>Deaths</th>
+               <th>Recovered</th>
+               <th>Delta Confirmed</th>
+               <th>Delta Deaths</th>
+               <th>Last Updated</th>
+            </tr>
+         </thead>
+         <tbody *ngFor="let report of cases ">
+            <tr *ngFor="let rep of report.statewise">
+               <td *ngIf="rep.state == 'Total'">{{rep.state}}</td>
+               <td *ngIf="rep.state == 'Total'">{{rep.confirmed}}</td>
+               <td *ngIf="rep.state == 'Total'">{{rep.deaths}}</td>
+               <td *ngIf="rep.state == 'Total'">{{rep.recovered}}</td>
+               <td *ngIf="rep.state == 'Total'">{{rep.deltaconfirmed}}</td>
+               <td *ngIf="rep.state == 'Total'">{{rep.deltadeaths}}</td>
+               <td *ngIf="rep.state == 'Total'">{{rep.lastupdatedtime}}</td>
+            </tr>
+            <!-- <td class="text-center"><button class="btn btn-danger btn-xs" (click)="delteUser(user.id)"><span class="glyphicon glyphicon-remove"></span> Delete</button></td> -->
+         </tbody>
+      </table>
+   </div>
+
+   <div class="container pt-4"
+      style="text-align: center;font-size: large; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+      Corona Cases in Telangana
+   </div>
+
+   <div class="table-responsive pt-4">
+      <table class="table table-striped pl-10 pt-10">
+         <thead>
+            <tr>
+               <th>State</th>
+               <th>Confirmed</th>
+               <th>Deaths</th>
+               <th>Recovered</th>
+               <th>Delta Confirmed</th>
+               <th>Delta Deaths</th>
+               <th>Last Updated</th>
+            </tr>
+         </thead>
+         <tbody *ngFor="let report of cases ">
+            <tr *ngFor="let rep of report.statewise">
+               <td *ngIf="rep.state == 'Telangana'">{{rep.state}}</td>
+               <td *ngIf="rep.state == 'Telangana'">{{rep.confirmed}}</td>
+               <td *ngIf="rep.state == 'Telangana'">{{rep.deaths}}</td>
+               <td *ngIf="rep.state == 'Telangana'">{{rep.recovered}}</td>
+               <td *ngIf="rep.state == 'Telangana'">{{rep.deltaconfirmed}}</td>
+               <td *ngIf="rep.state == 'Telangana'">{{rep.deltadeaths}}</td>
+               <td *ngIf="rep.state == 'Telangana'">{{rep.lastupdatedtime}}</td>
+            </tr>
+            <!-- <td class="text-center"><button class="btn btn-danger btn-xs" (click)="delteUser(user.id)"><span class="glyphicon glyphicon-remove"></span> Delete</button></td> -->
+         </tbody>
+      </table>
+   </div>
+
+   <div class="container pt-4"
+      style="text-align: center;font-size: large; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+      Corona Cases StateWise
+   </div>
+
+   <div class="table-responsive pt-4">
+      <table class="table table-striped pl-10 pt-10">
+         <thead>
+            <tr>
+               <th>State</th>
+               <th>Confirmed</th>
+               <th>Deaths</th>
+               <th>Recovered</th>
+               <th>Delta Confirmed</th>
+               <th>Delta Deaths</th>
+               <th>Last Updated</th>
+            </tr>
+         </thead>
+         <tbody *ngFor="let report of cases ">
+            <tr *ngFor="let rep of report.statewise">
+               <td *ngIf="rep.state != 'Telangana' && rep.state != 'Total' ">{{rep.state}}</td>
+               <td *ngIf="rep.state != 'Telangana'  && rep.state != 'Total'">{{rep.confirmed}}</td>
+               <td *ngIf="rep.state != 'Telangana'  && rep.state != 'Total'">{{rep.deaths}}</td>
+               <td *ngIf="rep.state != 'Telangana'  && rep.state != 'Total'">{{rep.recovered}}</td>
+               <td *ngIf="rep.state != 'Telangana'  && rep.state != 'Total'">{{rep.deltaconfirmed}}</td>
+               <td *ngIf="rep.state != 'Telangana'  && rep.state != 'Total'">{{rep.deltadeaths}}</td>
+               <td *ngIf="rep.state != 'Telangana'  && rep.state != 'Total'">{{rep.lastupdatedtime}}</td>
+            </tr>
+            <!-- <td class="text-center"><button class="btn btn-danger btn-xs" (click)="delteUser(user.id)"><span class="glyphicon glyphicon-remove"></span> Delete</button></td> -->
+         </tbody>
+      </table>
+   </div>
+</div>

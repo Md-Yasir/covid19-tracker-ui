@@ -1,0 +1,65 @@
+<div class="content">
+    <div class="pt-4 pl-4 pr-4 pb-2">
+        <div class="form-style-5">
+            <form (ngSubmit) = "submitVolForm()">
+                <fieldset>
+                    <legend><span class="number">1</span> Your Info</legend>
+
+                    <label for="Name"><span class="req">* </span> Name: </label>
+                    <input required type="text" [(ngModel)]="volunteer.name" name="name" id="name" required
+                        placeholder="Enter your Full Name" />
+
+                    <label for="FathernName"><span class="req">* </span>Father Name: </label>
+                    <input required type="text" [(ngModel)]="volunteer.fname" name="fname" id="fname" required
+                        placeholder="Enter your Father/Gaurdian Name" />
+
+                    <label for="Mobile No">Mobile No: </label>
+                    <input class="form-control" type="text" [(ngModel)]="volunteer.phno" name="phno" id="phno"
+                        required placeholder="Enter Valid Mobile Number" />
+
+                    <label for="Alternative No">Alternative No: </label>
+                    <input class="form-control" type="text" [(ngModel)]="volunteer.altphno" name="altphno" id="altphno"
+                        required placeholder="Enter Alternate Mobile Number" />
+
+                    <label for="Email"><span class="req">* </span> Email: </label>
+                    <input class="form-control" type="text" [(ngModel)]="volunteer.email" name="email" id="email"
+                        required placeholder="Enter valid email address" />
+
+                    <label for="Qualification "><span class="req">* </span> Qualification: </label>
+                    <input class="form-control" type="text" [(ngModel)]="volunteer.qualification" name="qualification"
+                        required id="qualification" required placeholder="Qualification" />
+
+                    <label for="Age"><span class="req">* </span> Age: </label>
+                    <input type="text" [(ngModel)]="volunteer.age" name="age" id="age" required required
+                        placeholder="Age" />
+
+                </fieldset>
+                <fieldset>
+                    <legend><span class="number">2</span> Additional Info</legend>
+                    
+                    <label for="job">Interests:</label>
+                    <select id="job" name="field4">
+                        <optgroup label="Technical">
+                            <option value="fishkeeping">Fishkeeping</option>
+                            <option value="reading">Reading</option>
+                            <option value="boxing">Boxing</option>
+                            <option value="debate">Debate</option>
+                            <option value="gaming">Gaming</option>
+                            <option value="snooker">Snooker</option>
+                            <option value="other_indoor">Other</option>
+                        </optgroup>
+                        <optgroup label="Non-Technical">
+                            <option value="football">Football</option>
+                            <option value="swimming">Swimming</option>
+                            <option value="fishing">Fishing</option>
+                            <option value="climbing">Climbing</option>
+                            <option value="cycling">Cycling</option>
+                            <option value="other_outdoor">Other</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <button class="button" style="vertical-align:middle" type="submit"><span>Register </span></button>
+            </form>
+        </div>
+    </div>
+</div>

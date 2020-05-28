@@ -1,0 +1,31 @@
+<div class="container">
+<div class="container">
+    <div class="row col-md-12 col-md-offset-2 custyle table-responsive">
+    <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Mobile Number</th>
+            <th>Address</th>
+            <th>Reason</th>
+            <th>Vehicle Nummber</th>
+            <th>Destination</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let pass of passes">
+            <td>{{pass.id}}</td>
+            <td>{{pass.name}}</td>
+            <td>{{pass.phno}}</td>
+            <td>{{pass.address}}</td>
+            <td>{{pass.reason}}</td>
+            <td>{{pass.vhno}}</td>
+            <td>{{pass.destination}}</td>
+            <td class="text-center"><button class="btn btn-danger btn-xs" (click)="passissued(pass.id)"><span class="glyphicon glyphicon-remove"></span> Issued</button></td>
+          </tr>
+    </tbody>
+    </table>
+    </div>
+</div>

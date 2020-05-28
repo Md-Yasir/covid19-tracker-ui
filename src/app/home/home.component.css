@@ -1,0 +1,9 @@
+p{
+  padding: 35px;
+}
+body{
+  background: rgb(255,255,255);
+  background: linear-gradient(152deg, rgba(255,255,255,1) 0%, rgba(251,253,253,1) 15%, rgba(237,245,246,1) 32%);
+}
+#formdiv{width: 300px; height: 300px; margin: 0 auto;}
+

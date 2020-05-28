@@ -1,0 +1,24 @@
+<div class="container pt-4">
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">State</th>
+      <th scope="col">City</th>
+      <th scope="col">Service Provider</th>
+      <th scope="col">Name of the organisation</th>
+      <th scope="col">Contact</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let detail of details">
+    <tr *ngFor="let report of detail.resources">
+        <td *ngIf = "report.category=='CoVID-19 Testing Lab'" class="d-none d-lg-block">{{report.state}}</td>
+        <td *ngIf = "report.category=='CoVID-19 Testing Lab'" >{{report.city}}</td>
+        <td *ngIf = "report.category=='CoVID-19 Testing Lab'">{{report.descriptionandorserviceprovided}}</td>
+        <td *ngIf = "report.category=='CoVID-19 Testing Lab'" class="d-none d-lg-block">{{report.nameoftheorganisation}}</td>
+        <td *ngIf = "report.category=='CoVID-19 Testing Lab'">{{report.phonenumber}}</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+</div>

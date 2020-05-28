@@ -1,0 +1,44 @@
+<div class="content">
+    <div class="pt-4 pl-4 pr-4 pb-2">
+        <div class="form-style-5">
+            <form (ngSubmit) = "fixAppointment()">
+                <fieldset>
+                    <legend><span class="number">1</span> Appointment Details</legend>
+
+                    <label for="Name"><span class="req">* </span> Name: </label>
+                    <input required type="text" [(ngModel)]="fixappointment.name" name="name" id="name" required
+                        placeholder="Enter your Full Name" />
+
+                    <label for="Mobile No">Mobile No: </label>
+                    <input class="form-control" type="text" [(ngModel)]="fixappointment.phno" name="phno" id="phno"
+                        required placeholder="Enter Valid Mobile Number" />
+
+                    <label for="Alternative No">Alternative No: </label>
+                    <input class="form-control" type="text" [(ngModel)]="fixappointment.altphno" name="altphno"
+                        id="altphno" required placeholder="Enter Alternate Mobile Number" />
+
+                    <label for="Email"><span class="req">* </span> Email: </label>
+                    <input class="form-control" type="text" [(ngModel)]="fixappointment.email" name="email" id="email"
+                        required placeholder="Enter valid email address" />
+
+                    <label for="Reason"><span class="req">* </span> Reason: </label>
+                    <input class="form-control" type="text" [(ngModel)]="fixappointment.reason" name="reason"
+                        id="reason" required placeholder="Enter Reason for Appointment" />
+
+                    <label for="Age"><span class="req">* </span> Age: </label>
+                    <input class="form-control" type="text" [(ngModel)]="fixappointment.age" name="age" id="age"
+                        required placeholder="Age" />
+
+                    <div class="pb-2">
+                        <label for="dateandtime"><span class="req">* </span> Date and Time: </label>
+                        <input class="form-control" [(ngModel)]="fixappointment.appointmentdatetime"
+                            name="appointmentdatetime" [owlDateTimeTrigger]="dtPicker1" [owlDateTime]="dtPicker1">
+                        <owl-date-time #dtPicker1></owl-date-time>
+                    </div>
+                </fieldset>
+                <button class="button" style="vertical-align:middle" type="submit"><span>Register </span></button>
+            </form>
+            {{message}}
+        </div>
+    </div>
+</div>

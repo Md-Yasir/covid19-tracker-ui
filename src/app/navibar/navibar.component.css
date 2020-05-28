@@ -1,0 +1,11 @@
+.img{
+  height: 10px;
+}
+.spacer{
+  flex: 1 1 auto;
+}
+.body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  text-align: center;
+}
