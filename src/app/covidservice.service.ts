@@ -13,10 +13,10 @@ export class CovidserviceService {
   // private BASE_URL = "http://covid19-tracker.cloudjiffy.net";
 
   //Heroku Server
-  private BASE_URL = "https://covid19tracker-telangana.herokuapp.com";
+  // private BASE_URL = "https://covid19tracker-telangana.herokuapp.com";
 
   //Local Server
-  // private BASE_URL = "http://localhost:8080";
+  private BASE_URL = "http://localhost:8080";
 
   private PASS_REGISTRATION = this.BASE_URL + '/pass/addpass';
   private VIEW_PASS_URL = this.BASE_URL + '/pass/viewpass';

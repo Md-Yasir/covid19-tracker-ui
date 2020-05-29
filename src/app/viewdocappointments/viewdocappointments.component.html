@@ -20,7 +20,7 @@
             <td>{{appointment.email}}</td>
             <td>{{appointment.reason}}</td>
             <td>{{appointment.age}}</td>
-            <td>{{appointment.appointmentdatetime}}</td>
+            <td>{{appointment.appointmentdatetime | date: 'short'}}</td>
             <td>{{appointment.altphno}}</td>
             <td class="text-center"><button class="btn btn-danger btn-xs " (click)="appointmentdone(appointment.id)"><span class="glyphicon glyphicon-remove"></span> Completed</button></td>
           </tr>
