@@ -9,7 +9,7 @@ import { CovidserviceService } from '../covidservice.service';
 })
 export class DocAppointmentComponent implements OnInit {
 
-  fixappointment: DocEntity = new DocEntity('', 0, 0, '', '', 0, '');
+  fixappointment: DocEntity = new DocEntity('', null, null, '', '', null, '');
   message: any;
 
   constructor(private service: CovidserviceService) { }
