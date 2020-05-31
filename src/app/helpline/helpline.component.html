@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+
+<div class="container pt-4"
+    style="text-align: center;font-size: large; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+    COVID-19 TESTING LABS IN UTTARAKHAND
+ </div>
+
+
+<div class="container pt-4">
+<table class="table table-light table-bordered pl-10 pt-10">
+  <thead>
+    <tr>
+      <th style="color: #ed7777;">City</th>
+      <th style="color: blue;">Service Provider</th>
+      <th style="color: green;">Name of the organisation</th>
+      <th style="color: grey;">Contact</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let detail of details">
+    <tr *ngFor="let report of detail.resources">
+        <td *ngIf = "report.category=='CoVID-19 Testing Lab' && report.state == 'Uttarakhand'" style="color: #ed7777;">{{report.city}}</td>
+        <td *ngIf = "report.category=='CoVID-19 Testing Lab' && report.state == 'Uttarakhand'" style="color: blue;">{{report.descriptionandorserviceprovided}}</td>
+        <td *ngIf = "report.category=='CoVID-19 Testing Lab' && report.state == 'Uttarakhand'" style="color: green;">{{report.nameoftheorganisation}}</td>
+        <td *ngIf = "report.category=='CoVID-19 Testing Lab' && report.state == 'Uttarakhand'" style="color: grey;">{{report.phonenumber}}</td>
+    </tr>
+
+  </tbody>
+</table>
+
+</div>
