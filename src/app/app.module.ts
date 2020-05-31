@@ -29,7 +29,7 @@ import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { RegVolComponent } from './RegVol/reg-vol.component';
 import { AboutComponent } from './about/about.component';
 import { ViewvolComponent } from './viewvol/viewvol.component';
-import { HelplineComponent } from './helpline/helpline.component';
+import { HelplineComponent} from './helpline/helpline.component'
 
 @NgModule({
   declarations: [
