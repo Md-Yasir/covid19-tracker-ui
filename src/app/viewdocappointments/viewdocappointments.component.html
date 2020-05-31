@@ -1,30 +1,31 @@
 <div class="container">
-<div class="container">
-    <div class="row col-md-12 col-md-offset-2 custyle table-responsive">
-    <table class="table table-striped custab">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Mobile No.</th>
-            <th>Email</th>
-            <th>Reason</th>
-            <th>Age</th>
-            <th>Date and Time of Appointment</th>
-            <th>Alternate No.</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let appointment of appointments" >
-            <td>{{appointment.name}}</td>
-            <td>{{appointment.phno}}</td>
-            <td>{{appointment.email}}</td>
-            <td>{{appointment.reason}}</td>
-            <td>{{appointment.age}}</td>
-            <td>{{appointment.appointmentdatetime | date: 'short'}}</td>
-            <td>{{appointment.altphno}}</td>
-            <td class="text-center"><button class="btn btn-danger btn-xs " (click)="appointmentdone(appointment.id)"><span class="glyphicon glyphicon-remove"></span> Completed</button></td>
-          </tr>
-    </tbody>
-</table>
+    <div class="container">
+        <div class="row col-md-12 col-md-offset-2 custyle table-responsive">
+        <table class="table table-light table-bordered pl-10 pt-10">
+        <thead>
+            <tr>
+                <th style="color: red;">Name</th>
+                <th style="color:grey">Mobile No.</th>
+                <th style="color: blue;">Email</th>
+                <th style="color: green;">Reason</th>
+                <th style="color: orange;">Age</th>
+                <th style="color: black;">Date and Time of Appointment</th>
+                <th style="color: indigo;">Alternate No.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let appointment of appointments" >
+                <td style="color: red;">{{appointment.name}}</td>
+                <td style="color: grey;">{{appointment.phno}}</td>
+                <td style="color: blue;">{{appointment.email}}</td>
+                <td style="color: green;">{{appointment.reason}}</td>
+                <td style="color: orange;">{{appointment.age}}</td>
+                <td style="color: black;">{{appointment.appointmentdatetime | date: 'short'}}</td>
+                <td style="color: indigo;">{{appointment.altphno}}</td>
+                <td class="text-center"><button class="btn btn-danger btn-xs " (click)="appointmentdone(appointment.id)"><span class="glyphicon glyphicon-remove"></span> Completed</button></td>
+              </tr>
+        </tbody>
+    </table>
+        </div>
     </div>
-</div>
+  

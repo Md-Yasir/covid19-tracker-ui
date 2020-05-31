@@ -9,7 +9,7 @@ import { CovidserviceService } from '../covidservice.service';
 })
 export class PassComponent implements OnInit {
 
-  pass: PassEntity = new PassEntity('', '', null, null, '', '', '', '', null, '', '', '');
+  pass: PassEntity = new PassEntity('', '', null, null, '', '', null, '', '', null, '', '', '');
   message: any;
 
   constructor(private service: CovidserviceService) { }

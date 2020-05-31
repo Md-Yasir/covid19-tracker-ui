@@ -1,7 +1,7 @@
 <div class="content">
     <div class="pt-4 pl-4 pr-4 pb-2">
         <div class="form-style-5">
-            <form (ngSubmit) = "submitPassForm()">
+            <form (ngSubmit)="submitPassForm()">
                 <fieldset>
                     <legend><span class="number">1</span> Personal Info</legend>
 
@@ -21,6 +21,10 @@
                     <input class="form-control" type="text" [(ngModel)]="pass.altphno" name="altphno" id="altphno"
                         required placeholder="Enter Alternate Mobile Number" />
 
+                    <label for="Aadhaar no."><span class="req">* </span> Aadhaar No. </label>
+                    <input class="form-control" type="text" [(ngModel)]="pass.aadhaar" name="aadhaar" id="aadhaar"
+                        required placeholder="Enter your Aadhaar no for proof" />
+
                     <label for="Email"><span class="req">* </span> Email: </label>
                     <input class="form-control" type="text" [(ngModel)]="pass.email" name="email" id="email" required
                         placeholder="Enter valid email address" />
@@ -34,7 +38,8 @@
                     <legend><span class="number">2</span> Pass Related Info</legend>
 
                     <label for="Reason"><span class="req">* </span> Select your Limit: </label>
-                    <select id="passrequirment" [(ngModel)]="pass.passrequirment" name="passrequirment">                        <option value="withincity">Within City Limit</option>
+                    <select id="passrequirment" [(ngModel)]="pass.passrequirment" name="passrequirment">
+                        <option value="withincity">Within City Limit</option>
                         <option value="outofcity">Out of City</option>
                     </select>
 
@@ -60,6 +65,8 @@
                 </fieldset>
                 <button class="button" style="vertical-align:middle" type="submit"><span>Apply </span></button>
             </form>
+
+            {{message}}
         </div>
     </div>
 </div>

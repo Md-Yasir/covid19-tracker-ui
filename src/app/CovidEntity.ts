@@ -6,6 +6,7 @@ export class PassEntity{
        public altphno: number,
        public email:any,
        public address: string,
+       public aadhaar: number,
        public passrequirment: string,
        public reason: string,
        public vhno: any,
