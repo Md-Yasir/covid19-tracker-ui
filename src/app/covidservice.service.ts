@@ -14,7 +14,7 @@ export class CovidserviceService {
 
   //Heroku Server
   private BASE_URL = "https://covid19tracker-telangana.herokuapp.com";
-
+k
   //Local Server
   // private BASE_URL = "http://localhost:8080";
 

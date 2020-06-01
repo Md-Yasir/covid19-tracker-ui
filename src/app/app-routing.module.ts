@@ -14,11 +14,12 @@ import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { RegVolComponent } from './RegVol/reg-vol.component';
 import { AboutComponent } from './about/about.component';
 import { ViewvolComponent } from './viewvol/viewvol.component';
+import { HelplineComponent } from './helpline/helpline.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full' },
   {path: 'services/addpass', component: PassComponent},
-  // {path: 'services/helpline', component: HelplineComponent},
+  {path: 'services/helpline', component: HelplineComponent},
   {path: 'home', component: HomeComponent},
   {path: 'adminpanel/viewpass', component: ViewpassComponent},
   {path: 'adminpanel/viewvol', component: ViewvolComponent},
