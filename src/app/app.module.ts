@@ -21,7 +21,6 @@ import { NavibarComponent } from './navibar/navibar.component';
 import { OurservicesComponent } from './ourservices/ourservices.component';
 import { HealthcareComponent } from './healthcare/healthcare.component';
 import { FreefoodComponent } from './freefood/freefood.component';
-import { FoodserviceComponent } from './foodservice/foodservice.component';
 import { OnlinecoursesComponent } from './onlinecourses/onlinecourses.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import{ CovidserviceService } from './covidservice.service';
@@ -44,7 +43,6 @@ import { HelplineComponent } from './helpline/helpline.component';
     OurservicesComponent,
     HealthcareComponent,
     FreefoodComponent,
-    FoodserviceComponent,
     OnlinecoursesComponent,
     LoginpageComponent,
     AdminpanelComponent,

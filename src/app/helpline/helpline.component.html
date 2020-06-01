@@ -3,7 +3,7 @@
 
 <div class="container pt-4"
     style="text-align: center;font-size: large; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-    COVID-19 TESTING LABS IN UTTARAKHAND
+    COVID-19 TESTING LABS IN TELANGANA
  </div>
 
 
@@ -19,10 +19,10 @@
   </thead>
   <tbody *ngFor="let detail of details">
     <tr *ngFor="let report of detail.resources">
-        <td *ngIf = "report.category=='CoVID-19 Testing Lab' && report.state == 'Uttarakhand'" style="color: #ed7777;">{{report.city}}</td>
-        <td *ngIf = "report.category=='CoVID-19 Testing Lab' && report.state == 'Uttarakhand'" style="color: blue;">{{report.descriptionandorserviceprovided}}</td>
-        <td *ngIf = "report.category=='CoVID-19 Testing Lab' && report.state == 'Uttarakhand'" style="color: green;">{{report.nameoftheorganisation}}</td>
-        <td *ngIf = "report.category=='CoVID-19 Testing Lab' && report.state == 'Uttarakhand'" style="color: grey;">{{report.phonenumber}}</td>
+        <td *ngIf = "report.category=='CoVID-19 Testing Lab' && report.state == 'Telangana'" style="color: #ed7777;">{{report.city}}</td>
+        <td *ngIf = "report.category=='CoVID-19 Testing Lab' && report.state == 'Telangana'" style="color: blue;">{{report.descriptionandorserviceprovided}}</td>
+        <td *ngIf = "report.category=='CoVID-19 Testing Lab' && report.state == 'Telangana'" style="color: green;">{{report.nameoftheorganisation}}</td>
+        <td *ngIf = "report.category=='CoVID-19 Testing Lab' && report.state == 'Telangana'" style="color: grey;">{{report.phonenumber}}</td>
     </tr>
 
   </tbody>
