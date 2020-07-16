@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule} from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { AgmCoreModule } from '@agm/core';
 
@@ -23,13 +23,14 @@ import { HealthcareComponent } from './healthcare/healthcare.component';
 import { FreefoodComponent } from './freefood/freefood.component';
 import { OnlinecoursesComponent } from './onlinecourses/onlinecourses.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
-import{ CovidserviceService } from './covidservice.service';
+import { CovidserviceService } from './covidservice.service';
 import { AdminpanelComponent } from './adminpanel/adminpanel.component';
 import { RegVolComponent } from './RegVol/reg-vol.component';
 import { AboutComponent } from './about/about.component';
 import { ViewvolComponent } from './viewvol/viewvol.component';
 import { HelplineComponent } from './helpline/helpline.component';
 import { MapComponent } from './map/map.component';
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -16,8 +16,6 @@ import { RegVolComponent } from './RegVol/reg-vol.component';
 import { AboutComponent } from './about/about.component';
 import { ViewvolComponent } from './viewvol/viewvol.component';
 import { HelplineComponent } from './helpline/helpline.component';
-import { DemomapComponent } from './demomap/demomap.component';
-
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full' },
   {path: 'services/addpass', component: PassComponent},
@@ -32,7 +30,6 @@ const routes: Routes = [
   {path: 'services/freefood', component: FreefoodComponent},
   {path: 'services/onlinecourses', component: OnlinecoursesComponent},
   {path: 'login', component: LoginpageComponent},
-  {path: 'maps', component: DemomapComponent},
   {path: 'about', component: AboutComponent},
   {path: 'services/volreg', component: RegVolComponent},
   {path: 'adminpanel', component: AdminpanelComponent},
