@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CovidserviceService } from '../covidservice.service';
 
 @Component({
   selector: 'app-map',
@@ -7,12 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapComponent implements OnInit {
 
-  public maps: any = { lat: 12.957438, lng: 80.181116 };
+  
+  lat: string = '';
+  log: string = '';
+  
+  location: object;
 
 
-  constructor() { }
+  constructor(private map: CovidserviceService) { }
 
   ngOnInit(): void {
+
+    this.map.getLocation().subscribe(data=> {
+      console.log(data);
+      this.lat = data.latitude;
+      this.log = data.longitude;
+    })
+
+
   }
 
 }
