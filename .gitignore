@@ -6,6 +6,8 @@
 # Only exists if Bazel was run
 /bazel-out
 
+/dist
+
 # dependencies
 /node_modules
 
@@ -43,3 +45,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+package-lock.json
+package.json

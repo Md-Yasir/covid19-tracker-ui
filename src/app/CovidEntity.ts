@@ -1,19 +1,19 @@
 export class PassEntity{
+       public name: string;
+       public fname: string;
+       public phno: number;
+       public altphno: number;
+       public email:any;
+       public address: string;
+       public aadhaar: number;
+       public passrequirment: string
+       public reason: string;
+       public vhno: any;
+       public start: string;
+       public destination: string;
+       public route: string;
     constructor(
-       public name: string,
-       public fname: string,
-       public phno: number,
-       public altphno: number,
-       public email:any,
-       public address: string,
-       public aadhaar: number,
-       public passrequirment: string,
-       public reason: string,
-       public vhno: any,
-       public start: string,
-       public destination: string,
-       public route: string
-    ){}
+       ){}
 }
 
 export class DocEntity{

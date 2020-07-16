@@ -7,6 +7,7 @@ import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { AgmCoreModule } from '@agm/core';
 
 
 import { AppComponent } from './app.component';
@@ -29,6 +30,7 @@ import { RegVolComponent } from './RegVol/reg-vol.component';
 import { AboutComponent } from './about/about.component';
 import { ViewvolComponent } from './viewvol/viewvol.component';
 import { HelplineComponent } from './helpline/helpline.component';
+import { DemomapComponent } from './demomap/demomap.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -50,6 +52,7 @@ import { HelplineComponent } from './helpline/helpline.component';
     AboutComponent,
     ViewvolComponent,
     HelplineComponent,
+    DemomapComponent
     ],
   imports: [
     BrowserModule,
@@ -61,8 +64,10 @@ import { HelplineComponent } from './helpline/helpline.component';
     OwlNativeDateTimeModule,
     MatToolbarModule,
     MatButtonModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDQruN5BOT8OVnxm6JzFCMRpsnxiLON5bE'
+    }),
     MatIconModule
-    
   ],
   providers: [CovidserviceService],
   bootstrap: [AppComponent]

@@ -4,6 +4,11 @@ import { throwError, Observable, observable} from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { error } from 'protractor';
 
+interface Location{
+  latitude: string;
+  longitude: string;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -109,4 +114,9 @@ k
   errorHandler(error){
     return throwError(error.messsage || "Server Error")
   }
+
+  getLocation(){
+    return this.http.get<Location>('http://api.ipapi.com/check?access_key=9c2559bfbf6df6d21ef415825fa33e1c');
+  }
 }
+
