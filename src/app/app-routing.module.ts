@@ -1,3 +1,4 @@
+import { MapComponent } from './map/map.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PassComponent } from './RegPass/pass.component';
@@ -32,7 +33,8 @@ const routes: Routes = [
   {path: 'login', component: LoginpageComponent},
   {path: 'about', component: AboutComponent},
   {path: 'services/volreg', component: RegVolComponent},
-  {path: 'adminpanel', component: AdminpanelComponent}
+  {path: 'adminpanel', component: AdminpanelComponent},
+  {path: 'map', component: MapComponent}
 ];
 
 @NgModule({
